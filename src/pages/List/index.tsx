@@ -2,7 +2,7 @@ import React,{ useMemo, useState, useEffect}  from 'react';
 import {Container, Content, Filters} from './styles'
 import ContentHeader from '../../components/ContentHeader'
 import SelectInput from '../../components/SelectInput'
-import HystoryFinanceCard from '../../HystoryFinanceCard';
+import HistoryFinanceCard from '../../HistoryFinanceCard';
 import {useLocation} from 'react-router-dom';
 import gains from '../../repositories/gains';
 import expenses from '../../repositories/expenses';
@@ -145,7 +145,7 @@ const List: React.FC = () => {
             <Content>
                 {
                     data.map( item => (
-                        <HystoryFinanceCard
+                        <HistoryFinanceCard
                             key = {item.id}
                             tagColor = {item.tagColor}
                             title = {item.description}

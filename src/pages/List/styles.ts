@@ -39,7 +39,7 @@ export const Filters = styled.div`
 
     .tag-filter-recurrent {
         &::after {
-            border-bottom: 10px solid ${ props => props.theme.color.success};
+            border-bottom: 10px solid #4E41FE};
         }
 
         }
